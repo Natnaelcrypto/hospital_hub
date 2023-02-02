@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>BootLocal Cloth</title>
+    <style>
+      * {
+          margin: 0;
+          color: red;
+          line-height: 2;
+          letter-spacing: 2px;
+          animation: colorAnimation;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+        }
+
+        
+        footer {
+          background-color: green;
+        }
+        .footer_content {
+          display: flex;
+        }
+        p:hover,
+        a:hover {
+          font-size: 2rem;
+          cursor: pointer;
+        }
+
+        @keyframes colorAnimation {
+          0% {
+            color: red;
+          }
+          50% {
+            color: yellow;
+          }
+          100% {
+            color: red;
+          }
+        }
+
+        p{
+        line-height: 1;
+         }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar sticky-top bg-light">
+      <div class="container-fluid navbar-expand shadow-lg py-1">
+        <div class="logo">
+          <a href="index.html">
+            <img class="img-fluid" src="favicon.ico" alt="Log of the Website" />
+          </a>
+        </div>
+        <a href="" class="navbar-brand blink">Hospital Hub</a>
+    
+        <div class="collapse row navbar-collapse justify-content-between" id="main-nav">
+          <div class="col-6">
+            <ul class="navbar-nav">
+              <!-- <li class="nav-item">
+                    <a href="private.html" class="nav-link">private hospital</a>
+                  </li> -->
+              <li class="nav-item">
+                <a href="public.html" class="nav-link">hospital</a>
+              </li>
+              <li class="nav-item">
+                <a href="labratory.html" class="nav-link">Lab</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <section class="mt-5">
+      <div class="container-xxl text-center">
+        <h2 class="fw-bolder display-4">Hospital</h2>
+        <p>
+          We hope you are enjoing our website this page provide <br />
+          the private hospitals in Addis Abeba city
+        </p>
+        <label for="search" class="fs-4 fw-bold">Search</label>
+        <input
+          type="text"
+          id="search"
+          class="controlgroup"
+          placeholder="search"
+        />
+      </div>
+    </section>
+    <!-- cards -->
+    <section class="mt-5">
+      <div class="container-fluid">
+        <h2 class="fw-bold text-center shadow-lg rounded py-2 my-3 mx-3">
+          General Hospital
+        </h2>
+        <div
+          class="row row-gap-3 justify-content-sm-center align-items-center mx-5"
+        >
+          <div class="col-sm-7 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <img
+                  class="img-fluid"
+                  src="./images/Aimn.png"
+                  alt="Amin Hospital log"
+                />
+                <h3 class="pb-2 pt-4 fs-5">Amin General Hospital</h3>
+                <a
+                  class="btn py-0 px-4 text-decoration-none border border-3 btn-outline-secondary"
+                  href="./main.html"
+                  >Get info</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-7 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <img
+                  class="img-fluid"
+                  src="./images/AddisHiwot.png"
+                  alt="AddisHiwot Hospital log"
+                />
+                <h3 class="pb-2 pt-4 fs-5">AddisHiwot Hospital</h3>
+                <a
+                  class="btn py-0 px-4 text-decoration-none border border-3 btn-outline-secondary"
+                  href="./main.html"
+                  >Get info</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-7 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <img
+                  class="img-fluid"
+                  src="./images/landmark.png"
+                  alt="landmark Hospital logo  "
+                />
+                <h3 class="pb-2 pt-4 fs-5">Landmark Hospital</h3>
+                <a
+                  class="btn py-0 px-4 text-decoration-none border border-3 btn-outline-secondary"
+                  href="./main.html"
+                  >Get info</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-5">
+      <div class="container-fluid">
+        <h2 class="fw-bold text-center shadow-lg rounded py-2 my-3 mx-3">
+          Specialized Hospitals
+        </h2>
+        <div
+          class="row row-gap-3 justify-content-sm-center align-items-center mx-5"
+        >
+          <div class="col-sm-7 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <img
+                  class="img-fluid"
+                  src="./images/icmc logo.jpg"
+                  alt="ICMC Specialized Hospital Image"
+                />
+                <h3 class="pb-2 pt-4 fs-5">ICMC Specialized Hospital</h3>
+                <a
+                  class="btn py-0 px-4 text-decoration-none border border-3 btn-outline-secondary"
+                  href="./main.html"
+                  >Get info</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-7 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <img
+                  class="img-fluid"
+                  src="./images/St.Gebrel.png"
+                  alt="St.Gebrel Specialized Hospital Image"
+                />
+                <h3 class="pb-2 pt-4 fs-5">St.Gebrel Specialized Hospital</h3>
+                <a
+                  class="btn py-0 px-4 text-decoration-none border border-3 btn-outline-secondary"
+                  href="./main.html"
+                  >Get info</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-7 col-md-5 col-lg-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <img
+                  class="img-fluid"
+                  src="./images/hayat hospital.jpg"
+                  alt="Hayat Specialized Hospital Image"
+                />
+                <h3 class="pb-2 pt-4 fs-5">Hayat Specialized Hospital</h3>
+                <a
+                  class="btn py-0 px-4 text-decoration-none border border-3 btn-outline-secondary"
+                  href="./main.html"
+                  >Get info</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- *************** footer  ***************** -->
+    <footer>
+      <div class="footer_content">
+        <div class="address">
+          <h2>Address</h2>
+          <p>Ethiopia,Addis Abeba</p>
+          <p>+251910111232</p>
+          <p>Support.@gmail.com</p>
+        </div>
+        <div class="service-footer">
+          <h2>Service</h2>
+          <a href="./public.html">
+            <p>Public Hospital</p>
+          </a>
+          <a href="./Private.html">
+            <p>Private Hospital</p>
+          </a>
+          <a href="./Labratory.html">
+            <p>Labratory</p>
+          </a>
+        </div>
+        <div class="about-follow">
+          <div class="Footer-about">
+            <h2>About the Website</h2>
+            <p>
+              This Website is amied to provide informations about different
+              Hospital in Addis Abeba.
+            </p>
+            <a href="./About.html">Read more</a>
+          </div>
+          <div class="follow">
+            <h3>Follow us</h3>
+            <div class="follow_linkes">
+              <a href="#">
+                <img src="./icons/facebook.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="./icons/instagram.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="./icons/twitter.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright <i class="fa fa-copyright"></i> 2023 All Right Reserved</p>
+      </div>
+    </footer>
+    <!-- ******************** javascript ********************* -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
