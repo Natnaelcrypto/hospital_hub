@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>BootLocal Cloth</title>
+    <style>
+      * {
+          margin: 0;
+          color: red;
+          line-height: 2;
+          letter-spacing: 2px;
+          animation: colorAnimation;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          line-height: 1;
+        }
+
+        footer {
+          background-color: green;
+        }
+        .footer_content {
+          display: flex;
+        }
+        p:hover,
+        a:hover {
+          font-size: 2rem;
+          cursor: pointer;
+        }
+
+        @keyframes colorAnimation {
+          0% {
+            color: red;
+          }
+          50% {
+            color: yellow;
+          }
+          100% {
+            color: red;
+          }
+        }
+
+        p{
+        line-height: 1;
+        }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar sticky-top bg-light">
+      <div class="container-fluid navbar-expand shadow-lg py-1">
+        <div class="logo">
+          <a href="index.html">
+            <img class="img-fluid" src="favicon.ico" alt="Log of the Website" />
+          </a>
+        </div>
+        <a href="" class="navbar-brand blink">Hospital Hub</a>
+    
+        <div class="collapse row navbar-collapse justify-content-between" id="main-nav">
+          <div class="col-6">
+            <ul class="navbar-nav">
+              <!-- <li class="nav-item">
+                    <a href="private.html" class="nav-link">private hospital</a>
+                  </li> -->
+              <li class="nav-item">
+                <a href="public.html" class="nav-link">hospital</a>
+              </li>
+              <li class="nav-item">
+                <a href="labratory.html" class="nav-link">Lab</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+
+    <section class="container" style="height: 12 0vh">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-9">
+                  
+                  <h1 class="display-4 fw-bold" id="animate">Contact</h1>
+                  <p class="fs-4">
+                      If you have any Comment Please contact me by the following
+                      addresses.
+                  </p>
+                  <ul>
+
+                      <li class="fs-5"> <img src="./video/phone.gif" id="phone_gif" alt=""> Phone number +251910111232</li>
+                      <li class="fs-5"> <img src="./video/email.gif" id="email_gif"  alt=""> Email Yohannesnatenael9@gmail.com</li>
+                  </ul>
+              </div>
+              
+          </div>
+          <div class="form d-grid mb-3">
+              <label for="" id="blink">
+                  your email
+              </label>
+              <input type="text">
+              <label for="" id="blink">
+                  subject
+              </label>
+          
+              <input type="text" >
+              <label for="" id="blink">Massage</label>
+              <textarea name="" id="" cols="30" rows="10">
+          
+                                  </textarea>
+              <button type="submit" class="w-50 m-3" id="button_submit">submite</button>
+          </div>
+      </div>
+  </section>
+
+    <!-- *************** footer  ***************** -->
+    <footer>
+      <div class="footer_content">
+        <div class="address">
+          <h2>Address</h2>
+          <p>Ethiopia,Addis Abeba</p>
+          <p>+251910111232</p>
+          <p>Support.@gmail.com</p>
+        </div>
+        <div class="service-footer">
+          <h2>Service</h2>
+          <a href="./public.html">
+            <p>Public Hospital</p>
+          </a>
+          <a href="./Private.html">
+            <p>Private Hospital</p>
+          </a>
+          <a href="./Labratory.html">
+            <p>Labratory</p>
+          </a>
+        </div>
+        <div class="about-follow">
+          <div class="Footer-about">
+            <h2>About the Website</h2>
+            <p>
+              This Website is amied to provide informations about different
+              Hospital in Addis Abeba.
+            </p>
+            <a href="./About.html">Read more</a>
+          </div>
+          <div class="follow">
+            <h3>Follow us</h3>
+            <div class="follow_linkes">
+              <a href="#">
+                <img src="./icons/facebook.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="./icons/instagram.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="./icons/twitter.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright <i class="fa fa-copyright"></i> 2023 All Right Reserved</p>
+      </div>
+    </footer>
+    <!-- ******************** javascript ********************* -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
